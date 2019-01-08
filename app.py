@@ -5,11 +5,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def homepage():
-    return "This is a homepage."
+    return render_template("test.html")
 
-@app.route("/profile")
-def profile(name):
-    return render_template("test.html", name=name)
 
 
 if __name__ == '__main__':
